@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bathalavallam School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family: 'Roboto', sans-serif; background:#eef2f7; color:#222; }
+    header { background: linear-gradient(90deg, #0b3c5d, #1a5c7d); color:#fff; padding:25px 50px; display:flex; justify-content: space-between; align-items:center; flex-wrap:wrap; box-shadow:0 5px 15px rgba(0,0,0,0.2); }
+    header h1 { margin:0; font-size:32px; letter-spacing:1px; text-shadow:1px 1px 2px rgba(0,0,0,0.3); }
+    nav a { color:#fff; margin-left:20px; text-decoration:none; font-weight:700; transition: color 0.3s, transform 0.3s; }
+    nav a:hover { color:#f9d423; transform: scale(1.1); }
+    section { padding:80px 10%; }
+    .hero { background: linear-gradient(135deg, #d0e8ff, #a3d4f7); text-align:center; padding:120px 20px; border-bottom: 6px solid #0b3c5d; border-radius:0 0 50% 50% / 0 0 10% 10%; box-shadow:0 10px 30px rgba(0,0,0,0.1); }
+    .hero h2 { font-size:50px; margin-bottom:20px; color:#0b3c5d; text-shadow:2px 2px 5px rgba(0,0,0,0.2); }
+    .hero p { font-size:22px; color:#1a5c7d; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; margin-top:40px; }
+    .card { background:#fff; padding:35px; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.15); transition: transform 0.4s, box-shadow 0.4s; }
+    .card:hover { transform: translateY(-15px) scale(1.03); box-shadow:0 25px 50px rgba(0,0,0,0.2); }
+    .card h3 { margin-top:0; color:#0b3c5d; font-size:22px; }
+    .card p { color:#555; line-height:1.7; }
+    button { background:#0b3c5d; color:#fff; border:none; padding:12px 25px; border-radius:10px; cursor:pointer; font-weight:700; font-size:16px; transition: all 0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+    button:hover { background:#f9d423; color:#0b3c5d; transform: scale(1.05); box-shadow:0 10px 25px rgba(0,0,0,0.15); }
+    footer { background: linear-gradient(90deg, #0b3c5d, #1a5c7d); color:#fff; text-align:center; padding:35px 50px; margin-top:50px; font-size:16px; letter-spacing:1px; box-shadow:0 -5px 15px rgba(0,0,0,0.2); }
+    footer p { margin:0; font-weight:500; }
+    @media(max-width:768px){ header { flex-direction:column; text-align:center; } nav { margin-top:15px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bathalavallam School</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#resources">Resources</a>
+    <a href="#students">Students</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Welcome to Bathalavallam School</h2>
+  <p>Empowering students, supporting teachers, and connecting parents.</p>
+</section>
+
+<section id="programs">
+  <h2>School Programs & Events</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Annual Day</h3>
+      <p>Photos & videos from Annual Day celebrations.</p>
+      <button>Open Album</button>
+    </div>
+    <div class="card">
+      <h3>Sports Day</h3>
+      <p>Memories from sports and competitions.</p>
+      <button>Open Album</button>
+    </div>
+    <div class="card">
+      <h3>Cultural Fest</h3>
+      <p>Dance, music and cultural events.</p>
+      <button>Open Album</button>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Documents & Important Files</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Important Circulars</h3>
+      <p>Notices, announcements, exam schedules.</p>
+      <button>View Files</button>
+    </div>
+    <div class="card">
+      <h3>Question Papers</h3>
+      <p>Previous year & model question papers.</p>
+      <button>Download</button>
+    </div>
+    <div class="card">
+      <h3>Learning Videos</h3>
+      <p>Recorded classes and subject-wise videos.</p>
+      <button>Watch</button>
+    </div>
+  </div>
+</section>
+
+<section id="students">
+  <h2>Student Corner</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Assignments</h3>
+      <p>Daily homework and project details.</p>
+      <button>View Assignments</button>
+    </div>
+    <div class="card">
+      <h3>Study Materials</h3>
+      <p>Notes, PDFs, and reference content.</p>
+      <button>View Materials</button>
+    </div>
+    <div class="card">
+      <h3>Time Tables</h3>
+      <p>Class-wise schedules.</p>
+      <button>Download Timetable</button>
+    </div>
+  </div>
+</section>
+
+<section id="teachers">
+  <h2>Teacher Resources</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Teaching Plans</h3>
+      <p>Lesson plans and syllabus tracking.</p>
+      <button>View Plans</button>
+    </div>
+    <div class="card">
+      <h3>Internal Documents</h3>
+      <p>Staff circulars and reports.</p>
+      <button>Access Documents</button>
+    </div>
+    <div class="card">
+      <h3>Upload Section</h3>
+      <p>Upload notes, assignments and videos.</p>
+      <button>Upload Files</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: +91 9XXXXXXXXX</p>
+  <p>Email: info@bathalavallamschool.com</p>
+  <p>Address: Bathalavallam School, Your City, India</p>
+</section>
+
+<footer>
+  <p>© 2025 Bathalavallam School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
